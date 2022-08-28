@@ -1,7 +1,7 @@
-﻿using System.IO;
+using System.IO;
 using System.Text;
 
-namespace cs_0828_1
+namespace cs_con_binary_writer
 {
     class Program
     {
