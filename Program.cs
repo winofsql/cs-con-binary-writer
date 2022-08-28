@@ -8,10 +8,10 @@ namespace cs_con_binary_writer
         private static string fileName = "Settings.dat";
         static void Main(string[] args)
         {
-            WriteBinData();
+            WriteBinaryData();
         }
 
-        private static void WriteBinData()
+        private static void WriteBinaryData()
         {
             using (var stream = File.Open(fileName, FileMode.Create))
             {
