@@ -27,3 +27,28 @@
 
 ### 空の zip ファイル
 ![image](https://user-images.githubusercontent.com/1501327/192670227-a9abae8b-26c2-4710-b8ed-05517787b885.png)
+
+```cs
+        private void WriteZipData()
+        {
+            // Open
+            var stream = File.Create("test.zip");
+            var writer = new BinaryWriter( stream );
+
+            writer.Write(101010256);
+
+            writer.Write(0);
+            writer.Write(0);
+            writer.Write(0);
+            writer.Write(0);
+
+            writer.Write(false);
+            writer.Write(false);
+
+            writer.Close();
+            writer.Dispose();
+            // Close
+            stream.Close();
+            stream.Dispose();
+        }
+```
